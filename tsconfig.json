@@ -1,0 +1,30 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "ESNext",
+    "module": "ESNext",
+    "lib": ["ESNext", "dom"],
+    "jsx": "preserve",
+    "jsxImportSource": "solid-js",
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "esModuleInterop": true,
+    "noImplicitAny": true,
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "outDir": "dist",
+    "paths": {
+      "@/*": ["src/*"],
+      "@libs/ui": ["../../libs/ui/src", "libs/ui/src"],
+      "@libs/utils": ["../../libs/utils/src", "libs/utils/src"]
+    }
+  },
+  "exclude": ["node_modules", "dist"]
+}

@@ -1,0 +1,40 @@
+{
+  "name": "solidjs-dynamic-module-federation",
+  "version": "0.0.1",
+  "description": "A dynamic module federation built with Solid JS",
+  "license": "MIT",
+  "homepage": "https://github.com/lacodda/solidjs-dynamic-module-federation",
+  "author": {
+    "name": "Kirill Lahtachev",
+    "email": "lahtachev@gmail.com",
+    "url": "http://lacodda.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:lacodda/solidjs-dynamic-module-federation.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lacodda/solidjs-dynamic-module-federation/issues"
+  },
+  "scripts": {
+    "start": "node config/index.mjs --mode=development",
+    "build": "node config/index.mjs --mode=production",
+    "serve": "node config/index.mjs --mode=serve",
+    "lint": "eslint --ext .tsx,.ts,.js apps/*/src/* --fix"
+  },
+  "keywords": [
+    "webpack",
+    "webpack 5",
+    "module federation",
+    "dynamic federation",
+    "microfrontend",
+    "solidjs"
+  ],
+  "workspaces": [
+    "apps/*",
+    "libs/*"
+  ],
+  "devDependencies": {
+    "zx": "^7.2.2"
+  }
+}
