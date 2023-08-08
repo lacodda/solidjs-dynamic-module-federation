@@ -1,4 +1,3 @@
-
 import { For, createEffect, createSignal } from 'solid-js';
 import { styled } from 'solid-styled-components';
 import { LoadRemoteModule } from '@libs/utils';
@@ -55,7 +54,7 @@ const App = () => {
 
       setDynamicComponent((await loadRemoteModule.loadComponent(selected(), './Module')).default);
     })();
-  }, [selected]);
+  });
 
   return (
     <AppContainer>
